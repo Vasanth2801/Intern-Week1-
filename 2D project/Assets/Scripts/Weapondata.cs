@@ -7,6 +7,6 @@ public class Weapondata : ScriptableObject
     //Weapon Properties
     public string weaponName;
     public int damage;
-    public int firerate;
+    public float fireRate;
     public int magazineSize;
 }

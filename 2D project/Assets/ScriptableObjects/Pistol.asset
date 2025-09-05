@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Weapondata
   weaponName: Pistol
   damage: 10
-  firerate: 1
+  fireRate: 1
   magazineSize: 6

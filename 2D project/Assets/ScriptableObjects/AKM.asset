@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b21f434cc7e05499c7f4ce41f9ebe2, type: 3}
   m_Name: AKM
   m_EditorClassIdentifier: Assembly-CSharp::Weapondata
-  weaponName: 
-  damage: 0
-  firerate: 0
-  magazineSize: 0
+  weaponName: AKM
+  damage: 30
+  fireRate: 0.5
+  magazineSize: 130
