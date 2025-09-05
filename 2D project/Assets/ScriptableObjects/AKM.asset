@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Weapondata
   weaponName: AKM
   damage: 30
-  fireRate: 0.5
+  fireRate: 6
   magazineSize: 130

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Weapondata
   weaponName: M416
   damage: 20
-  fireRate: 0.4
+  fireRate: 4
   magazineSize: 80

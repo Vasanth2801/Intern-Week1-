@@ -10,12 +10,19 @@ public class Weapon : MonoBehaviour
     Weapondata currentWeapon;
     int currentMag;
     float nextTimeToFire;
+    int[] ammoCount;
 
     [Header("UI")]
     public TextMeshProUGUI weaponNameText;
 
     void Start()
     {
+        // Ammo count for each weapon at Starting
+        ammoCount = new int[weapon.Length];
+        for(int i = 0; i < weapon.Length; i++)
+        {
+            ammoCount[i] = weapon[i].magazineSize;
+        }
         EquipWeapon(0);
     }
 
@@ -51,12 +58,11 @@ public class Weapon : MonoBehaviour
 
             currentWeaponIndex = index;
             currentWeapon = weapon[index];
-            currentMag = currentWeapon.magazineSize;
+            currentMag = ammoCount[index];
 
             Debug.Log("Equipped" + currentWeapon.weaponName);
             
            UpdateUI(); // Update the UI with current weapon
-
         }
     
 
@@ -71,6 +77,7 @@ public class Weapon : MonoBehaviour
             {
                 Debug.Log(currentWeapon.weaponName +  "Fired" + currentWeapon.damage + " damage dealt.");
                 currentMag--;
+                ammoCount[currentWeaponIndex] = currentMag;
                 nextTimeToFire = Time.time + 1f / currentWeapon.fireRate;
             }
             else
