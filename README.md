@@ -33,3 +33,11 @@ Implement Enemy Pooling System
 * I have create a empty object and placed it at a distance and then added the enemy spawner script to it where it has refernce of the object pool manager to spawn enemies
 * Also created enemy script for enemy behaviour 
 
+Test efficieny for both enemy and Bullets
+* First i have reduced the no.of objects to spawned and interval time for enemy but still the spawning is same as before i dont feel any difference that spawning very effective
+* For bullet i have rapdily pressed space bar for long time but still the bullet spawning has no difference on the spawning speed very effective for firing a bullet and had fun testing with this one
+* Even when i check this with game mode stats the Fps did'nt even cross more than 61 fps with was really impressive.
+* Then i have gone to window and using profiler i checked the cpu memory usage that is around  30fps
+* I have also created a new scene to use instantiate and checked the fps of the game the minimum fps i would get was around 76 fps with is the minimum the maximum numbers i got was around 90 fps
+* With compary both the scenes object pooling gave the best reult and output 
+
