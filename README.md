@@ -26,4 +26,10 @@ Implement Bullet Pooling System
 * Created two new scripts bullet and gun where gun is used get the refrence of the object pool manager to spawn the bullets
 * Bullet script is for the behaviour of the bullet to move the bullet in the game view.
 * Blocker: when the scripts are done and test the play button first the bullet was not moving only when i pressed 6 to 7 times the space bar it was moving then i have gone through the script throughly and noticed that i was reseting the velocity eveytime in script that was the issue adn i removed the line it worked mormally 
+CONTROLS : SPACE TO FIRE
+
+Implement Enemy Pooling System
+* I have created a Enemy sprite(Square) and make it as a prefab and add it to the object pooling in inspector and then two scripts one is enemy and enemy spawner
+* I have create a empty object and placed it at a distance and then added the enemy spawner script to it where it has refernce of the object pool manager to spawn enemies
+* Also created enemy script for enemy behaviour 
 
