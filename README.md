@@ -20,3 +20,10 @@ Create a pool Manager Script
 * added the logic for spawning the squares in the scene(now we need get a refernce from other script)
 * Blocker:After intailize the dictionary and list in the script but when i save a go back into unity it was not visible but after watching the given reference video i missed the keyword(system.Serialzible) and after that i worked as i excepted 
 
+Implement Bullet Pooling System
+* created a new circle object and named it "Bullet" and make it as a prefab and then drag and drop it in object pooler to spawn the bullets from reference.
+* Then a created a Empty gameobject Gun and a child firepoint where the bullet will be spawned.
+* Created two new scripts bullet and gun where gun is used get the refrence of the object pool manager to spawn the bullets
+* Bullet script is for the behaviour of the bullet to move the bullet in the game view.
+* Blocker: when the scripts are done and test the play button first the bullet was not moving only when i pressed 6 to 7 times the space bar it was moving then i have gone through the script throughly and noticed that i was reseting the velocity eveytime in script that was the issue adn i removed the line it worked mormally 
+
