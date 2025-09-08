@@ -41,3 +41,7 @@ Test efficieny for both enemy and Bullets
 * I have also created a new scene to use instantiate and checked the fps of the game the minimum fps i would get was around 76 fps with is the minimum the maximum numbers i got was around 90 fps
 * With compary both the scenes object pooling gave the best reult and output 
 
+Additional:
+*I have implemented additonally a simple collision detector when bullet hits the enemy the bullet destroys
+*First i thought of destroy enemies but output was not excepted(the enemies was destroying since i was pressing rapidly and queue got emptied)
+
