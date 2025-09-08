@@ -14,3 +14,9 @@ Why Object Pooling is Important?
 * by using this one we can increase the performance of our game and reduce cpu memory.
 * Eg: For an top down Shooting game can be mainly used for bullets.
 
+Create a pool Manager Script
+* Learned about what is dictionary and queue and how they are used effiecintly for object pooling
+* created the pool manager script with inactive squares at first when the game begins.
+* added the logic for spawning the squares in the scene(now we need get a refernce from other script)
+* Blocker:After intailize the dictionary and list in the script but when i save a go back into unity it was not visible but after watching the given reference video i missed the keyword(system.Serialzible) and after that i worked as i excepted 
+
