@@ -34,7 +34,7 @@ public class ObjectPoolManager : MonoBehaviour
         }
     }
 
-    public GameObject SpawnObjects(string tag, Vector3 position, Quaternion rotation)   //A new function to spawn the objects 
+    public GameObject SpawnObjects(string tag, Vector2 position, Quaternion rotation)   //A new function to spawn the objects 
     {
        GameObject objectToSpawn = dictionaryofPools[tag].Dequeue(); //removing the object from the queue(making it active)
         objectToSpawn.SetActive(true);                              //setting it to true (activating it)
