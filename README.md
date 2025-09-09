@@ -65,11 +65,16 @@ Implementation(Step by Step)
 * Click on Player Controller a new window opens with Three sections(ActionsMap,Actions,ActionProperties)
 * In ActionMap Named the Object we want in this case it is Player
 * Added Move and Sprint Actions for the player
-* In Action properties added the keys to that specific action for Keyboard and GamePad 
+* In Action properties added the keys to that specific action for Keyboard and GamePad
+* Additionally Added a new scene and created a new input system for Topdown Controller
 
 
 Features Added
-* Added Move and Sprint Input Actions (For KeyBoard and GamePad)
+* Added Move and Sprint Input Actions (For KeyBoard and GamePad) [ Side Scrolling Game]
+* Added Move Input Actions (For Keyborad) [Top down Controller]
 * 
+
+Blockers:
+* First when i opened the input actions window and started adding the actions for player movement and confused only two bindings were given it should have four up,down,left and right and i watch the reference video and noted that in properties i didnt change the actiontype to value and controltype to Vector2. 
 
 
