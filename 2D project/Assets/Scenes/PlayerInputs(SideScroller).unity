@@ -636,10 +636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
-  sprintSpeed: 10
-  dashForce: 12
+  sprintSpeed: 12
+  dashForce: 20
   dashCooldown: 1
-  dashDuration: 0.2
+  dashDuration: 0.3
 --- !u!1 &1947044873
 GameObject:
   m_ObjectHideFlags: 0
