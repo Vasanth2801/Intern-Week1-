@@ -45,3 +45,31 @@ Additional:
 *I have implemented additonally a simple collision detector when bullet hits the enemy the bullet destroys
 *First i thought of destroy enemies but output was not excepted(the enemies was destroying since i was pressing rapidly and queue got emptied)
 
+
+Day-4(Date:9/9/2025)
+
+Task : Implementation of Player Movement using Unity Package System
+
+What I Learned:
+* Learned How to install unity Package System.
+* How To create Input Actions for Player(Input Actions can be used for even different characters(eg:enemy))
+* I learned about three new Scetions(ActionMap,Actions,ActionProperties)
+* ActionMap: Where it is the section which notes down the Name of Actionmap(eg:Player)
+* Actions:This is where theactions are added like Move,Sprint etc....
+* ActionProperties: This is where we are giving the keycode for that specific action.
+
+Implementation(Step by Step)
+* Installed Unity Package System in Package Manager.
+* Then in Project settings in player tab set the input handling to both the Input handling .
+* In Project window Right Click new input action rename it to "PlayerController"
+* Click on Player Controller a new window opens with Three sections(ActionsMap,Actions,ActionProperties)
+* In ActionMap Named the Object we want in this case it is Player
+* Added Move and Sprint Actions for the player
+* In Action properties added the keys to that specific action for Keyboard and GamePad 
+
+
+Features Added
+* Added Move and Sprint Input Actions (For KeyBoard and GamePad)
+* 
+
+
