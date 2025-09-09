@@ -57,6 +57,7 @@ What I Learned:
 * ActionMap: Where it is the section which notes down the Name of Actionmap(eg:Player)
 * Actions:This is where theactions are added like Move,Sprint etc....
 * ActionProperties: This is where we are giving the keycode for that specific action.
+* How to a implement player movement for a side scroller  and Top down COntroller 2D game 
 
 Implementation(Step by Step)
 * Installed Unity Package System in Package Manager.
@@ -67,14 +68,17 @@ Implementation(Step by Step)
 * Added Move and Sprint Actions for the player
 * In Action properties added the keys to that specific action for Keyboard and GamePad
 * Additionally Added a new scene and created a new input system for Topdown Controller
+* Added the essential physics component to the player and added the script created 
 
 
 Features Added
 * Added Move and Sprint Input Actions (For KeyBoard and GamePad) [ Side Scrolling Game]
 * Added Move Input Actions (For Keyborad) [Top down Controller]
-* 
+* Player moving left and right using keyborad inputs.
+* Player moving a Top down controller environment with keyboard inputs
 
 Blockers:
-* First when i opened the input actions window and started adding the actions for player movement and confused only two bindings were given it should have four up,down,left and right and i watch the reference video and noted that in properties i didnt change the actiontype to value and controltype to Vector2. 
+* First when i opened the input actions window and started adding the actions for player movement and confused only two bindings were given it should have four up,down,left and right and i watch the reference video and noted that in properties i didnt change the actiontype to value and controltype to Vector2.
+* In Top down Contoller when i have done the script But in game scene the player keeps falling and does not move when i press the keys and then i noticed that in rigidbody i didnt scale the gravity to zero and does'nt add the script which handles the player logic 
 
 
