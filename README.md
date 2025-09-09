@@ -57,7 +57,6 @@ Sprint: LEft Shift
 Dash: LEft Crtl
 
 Side Scroller:
-
 Movement: AD or Arrow keys 
 Sprint: LEft Shift
 Dash: LEft Crtl
@@ -70,7 +69,8 @@ What I Learned:
 * Actions:This is where theactions are added like Move,Sprint etc....
 * ActionProperties: This is where we are giving the keycode for that specific action.
 * How to a implement player movement for a side scroller  and Top down COntroller 2D game
-* How to implement a sprint and dash mechanic to a player in both side scroller and Top down controller 2D game 
+* How to implement a sprint and dash mechanic to a player in both side scroller and Top down controller 2D game
+* How to Tune player movements smoothly so everybody can enjoy the game
 
 Implementation(Step by Step)
 * Installed Unity Package System in Package Manager.
@@ -82,7 +82,8 @@ Implementation(Step by Step)
 * In Action properties added the keys to that specific action for Keyboard and GamePad
 * Additionally Added a new scene and created a new input system for Topdown Controller
 * Added the essential physics component to the player and added the script created
-* Added the sprint and dash functionality to the player where the players moves fast 
+* Added the sprint and dash functionality to the player where the players moves fast
+* Tuned in some values for dash and sprint since it was not recongiable in eyes after the tunning it was smooth and also visible 
 
 
 Features Added
@@ -96,5 +97,9 @@ Blockers:
 * First when i opened the input actions window and started adding the actions for player movement and confused only two bindings were given it should have four up,down,left and right and i watch the reference video and noted that in properties i didnt change the actiontype to value and controltype to Vector2.
 * In Top down Contoller when i have done the script But in game scene the player keeps falling and does not move when i press the keys and then i noticed that in rigidbody i didnt scale the gravity to zero and does'nt add the script which handles the player logic
 * In Implementing Sprint functanlity to player first i tried to multiply with the current speed but the speed keeps on multiplying and gone infinity and shows error and then tried adding the a little speed but that keeps on adding the speed and then created a variable in inscpector and set it value double the normal speed and then done it as if button pressed normal speed is equal to boost speed and then it changes the speed.
+
+Summary:
+* Additionally i learned more about the new input system where it used across various platforms like gamepad,joystick,touch,keyboardetc... 
+* In old system it was only easy to implement it in keyboards but in new system it is across various systems
 
 
