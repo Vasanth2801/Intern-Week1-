@@ -50,6 +50,18 @@ Day-4(Date:9/9/2025)
 
 Task : Implementation of Player Movement using Unity Package System
 
+Controls:
+Top Down Controller:
+Movement : WASD or Arrow keys
+Sprint: LEft Shift
+Dash: LEft Crtl
+
+Side Scroller:
+
+Movement: AD or Arrow keys 
+Sprint: LEft Shift
+Dash: LEft Crtl
+
 What I Learned:
 * Learned How to install unity Package System.
 * How To create Input Actions for Player(Input Actions can be used for even different characters(eg:enemy))
@@ -57,7 +69,8 @@ What I Learned:
 * ActionMap: Where it is the section which notes down the Name of Actionmap(eg:Player)
 * Actions:This is where theactions are added like Move,Sprint etc....
 * ActionProperties: This is where we are giving the keycode for that specific action.
-* How to a implement player movement for a side scroller  and Top down COntroller 2D game 
+* How to a implement player movement for a side scroller  and Top down COntroller 2D game
+* How to implement a sprint and dash mechanic to a player in both side scroller and Top down controller 2D game 
 
 Implementation(Step by Step)
 * Installed Unity Package System in Package Manager.
@@ -68,7 +81,8 @@ Implementation(Step by Step)
 * Added Move and Sprint Actions for the player
 * In Action properties added the keys to that specific action for Keyboard and GamePad
 * Additionally Added a new scene and created a new input system for Topdown Controller
-* Added the essential physics component to the player and added the script created 
+* Added the essential physics component to the player and added the script created
+* Added the sprint and dash functionality to the player where the players moves fast 
 
 
 Features Added
@@ -76,9 +90,11 @@ Features Added
 * Added Move Input Actions (For Keyborad) [Top down Controller]
 * Player moving left and right using keyborad inputs.
 * Player moving a Top down controller environment with keyboard inputs
+* Added sprint and Dash To the player in both side scroller and topDown 
 
 Blockers:
 * First when i opened the input actions window and started adding the actions for player movement and confused only two bindings were given it should have four up,down,left and right and i watch the reference video and noted that in properties i didnt change the actiontype to value and controltype to Vector2.
-* In Top down Contoller when i have done the script But in game scene the player keeps falling and does not move when i press the keys and then i noticed that in rigidbody i didnt scale the gravity to zero and does'nt add the script which handles the player logic 
+* In Top down Contoller when i have done the script But in game scene the player keeps falling and does not move when i press the keys and then i noticed that in rigidbody i didnt scale the gravity to zero and does'nt add the script which handles the player logic
+* In Implementing Sprint functanlity to player first i tried to multiply with the current speed but the speed keeps on multiplying and gone infinity and shows error and then tried adding the a little speed but that keeps on adding the speed and then created a variable in inscpector and set it value double the normal speed and then done it as if button pressed normal speed is equal to boost speed and then it changes the speed.
 
 
