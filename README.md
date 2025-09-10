@@ -146,6 +146,12 @@ Blocker:
 * In This CountdownTimer implementation,when i first added it normally but it showed me in decimal value and i go to unity documentation to learn about Mathf.Ceil which is used to get the whole number around it and then it worked normally
 
 
+Summary:
+* Today i learned about delegates and events which i have not worked no before and understood how it works  and how use them and thier main purpose
+* Also i learned more about UI specifally how slider area works and how to implement them in game scene 
+
+
+
 
 
 
