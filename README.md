@@ -112,7 +112,8 @@ What I learned:
 * Events are used for communicating between two objects
 * Delegates acts as  connector for two objects
 * delegates are very important for creating events
-* How to add a countdown timer in the Game and how to implement it in UI and update it in every frame until it reaches zero 
+* How to add a countdown timer in the Game and how to implement it in UI and update it in every frame until it reaches zero
+* How to use Coroutines and implement it correctly in a Game
 
 Important POINTS In Today Intern Notes:
 * In delegates the return type and paramters should be same for publisher and subscriber
@@ -123,10 +124,13 @@ Important POINTS In Today Intern Notes:
 Implementation(Step by Step)
 * First leanred the concepts of events and delgates an how to implement it and where to use in our projects
 * Created a Script as CountDown Timer and make it reduces it until it goes zero
-* Also added a simple UI to see the Timer in game scene so it everybody can view it 
+* Also added a simple UI to see the Timer in game scene so it everybody can view it
+* Created a new Coroutine method for the delay and for better performance
+* Increased the timer for around 2 seconds for better balancing
 
 Features implemented:
-* Added a Countdown Timer as it reduces slowly 
+* Added a Countdown Timer as it reduces slowly
+* Used a coroutine method to less the timer for a better performance 
 
 Blocker:
 * In This CountdownTimer implementation,when i first added it normally but it showed me in decimal value and i go to unity documentation to learn about Mathf.Ceil which is used to get the whole number around it and then it worked normally
