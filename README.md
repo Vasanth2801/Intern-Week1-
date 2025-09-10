@@ -102,4 +102,25 @@ Summary:
 * Additionally i learned more about the new input system where it used across various platforms like gamepad,joystick,touch,keyboardetc... 
 * In old system it was only easy to implement it in keyboards but in new system it is across various systems
 
+Day - 5(Date:10/9/2025)
+
+Task:
+Implement a countdowntimer using events and delegates
+
+What I learned:
+*I have leanred about C# events and delegates
+* Events are used for communicating between two objects
+* Delegates acts as  connector for two objects
+* delegates are very important for creating events
+
+Implementation(Step by Step)
+* First leanred the concepts of events and delgates an how to implement it and where to use in our projects
+* 
+
+Features implemented:
+*
+
+
+
+
 
