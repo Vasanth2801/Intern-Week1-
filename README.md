@@ -115,6 +115,7 @@ What I learned:
 * How to add a countdown timer in the Game and how to implement it in UI and update it in every frame until it reaches zero
 * How to use Coroutines and implement it correctly in a Game
 * How to use Delegates and events in a Game and how to call them,declare them etc..
+* How to add UI in game by setting it true and false
 
 Important POINTS In Today Intern Notes:
 * In delegates the return type and paramters should be same for publisher and subscriber
@@ -132,11 +133,14 @@ Implementation(Step by Step)
 * created a new delegate and event as HandlegameEnd and in event handler script called it
 * when timer goes zero the timercountdown triggered the event and check if there is any subscribers
 * when the subscriber is called game over shows in console
-
+* In Game over panel added the text and in code
+* In code the game over panel is set to true and false when event it called
+  
 Features implemented:
 * Added a Countdown Timer as it reduces slowly
 * Used a coroutine method to less the timer for a better performance
 * using delegate and events to trigger gameover effect
+* Using events function how to trigger the UI screens 
 
 Blocker:
 * In This CountdownTimer implementation,when i first added it normally but it showed me in decimal value and i go to unity documentation to learn about Mathf.Ceil which is used to get the whole number around it and then it worked normally
