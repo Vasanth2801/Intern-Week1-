@@ -157,18 +157,22 @@ Task:
 GameManager and AudioManager using Singleton Pattern
 
 What I Learned:
-* Learned about Singleton patterns and how to use it also learned about private getter and setter so that no issues come in Singleton Part
+* Learned about Singleton patterns and how to use it also learned about private getter and setter so that no issues come in Singleton Part like memory leakage 
 * Why to use it in Projects so we dont want create many scripts one script global accessible to all others
 * Drawbacks: In Complex or large projects is very difficult to handle and may confuse people
+* How to implemeent a UI menu and call it using GameManager Singleton Pattern and how the button on click event is working
 
 
 Implementation(Step by Step)
 * For creating a Simple singleton example i have created a new c# script and then created a new public static reference to the instamce data.
-* In Awake Method we say like if instance is not equal to null then get the instance of this class and dont destroy on load to have it across game scenes 
+* In Awake Method we say like if instance is not equal to null then get the instance of this class and dont destroy on load to have it across game scenes
+* I created two empty gameobjects and UImanager and Gamemanager and then created a simple UI to show how the gamemanager singleton works
+* In gamemanager created the singleton in which calls the resume and restart method in another script
+* so when the button is pressed the methods aloows the logic to happen
 
 
 Features Implemented:
-* 
+* Created a simple UI menu with resume and restart buttons to see how the singleton works on gamemanager 
 
 
 
