@@ -187,6 +187,9 @@ Features Implemented:
 Blocker: 
 When playing the sound effects first play at oneshot was used i was using normal pLay button which was not that good so i go to unity documentation and learned about keywords for the certain effects and changed and then it worked.
 
+Summary:
+*Today i learned about how to use audio system in game and how to implement singleton patten effectively 
+
 
 
 
