@@ -148,7 +148,31 @@ Blocker:
 
 Summary:
 * Today i learned about delegates and events which i have not worked no before and understood how it works  and how use them and thier main purpose
-* Also i learned more about UI specifally how slider area works and how to implement them in game scene 
+* Also i learned more about UI specifally how slider area works and how to implement them in game scene
+
+
+Day 6(Date:11/9/2025)
+
+Task:
+GameManager and AudioManager using Singleton Pattern
+
+What I Learned:
+* Learned about Singleton patterns and how to use it also learned about private getter and setter so that no issues come in Singleton Part
+* Why to use it in Projects so we dont want create many scripts one script global accessible to all others
+* Drawbacks: In Complex or large projects is very difficult to handle and may confuse people
+
+
+Implementation(Step by Step)
+* For creating a Simple singleton example i have created a new c# script and then created a new public static reference to the instamce data.
+* In Awake Method we say like if instance is not equal to null then get the instance of this class and dont destroy on load to have it across game scenes 
+
+
+Features Implemented:
+* 
+
+
+
+
 
 
 
