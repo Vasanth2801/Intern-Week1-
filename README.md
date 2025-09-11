@@ -161,6 +161,7 @@ What I Learned:
 * Why to use it in Projects so we dont want create many scripts one script global accessible to all others
 * Drawbacks: In Complex or large projects is very difficult to handle and may confuse people
 * How to implemeent a UI menu and call it using GameManager Singleton Pattern and how the button on click event is working
+* Learned newly about audio system how it works in game and how to implement it 
 
 
 Implementation(Step by Step)
@@ -168,11 +169,14 @@ Implementation(Step by Step)
 * In Awake Method we say like if instance is not equal to null then get the instance of this class and dont destroy on load to have it across game scenes
 * I created two empty gameobjects and UImanager and Gamemanager and then created a simple UI to show how the gamemanager singleton works
 * In gamemanager created the singleton in which calls the resume and restart method in another script
-* so when the button is pressed the methods aloows the logic to happen
+* so when the button is pressed the methods allows the logic to happen
+* Created a Audiomanger script and added a audio source component to the gameobject
+* imported the musics and added in the script and then played the scene
 
 
 Features Implemented:
-* Created a simple UI menu with resume and restart buttons to see how the singleton works on gamemanager 
+* Created a simple UI menu with resume and restart buttons to see how the singleton works on gamemanager
+* Created a audiomanager to play the desired music when the game starts 
 
 
 
