@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     // Method to restart the game
     public void Restart()
     {
-        SceneManager.LoadScene("Restart");         //Load the Scene named "Restart"
+        SceneManager.LoadScene("SingletonPatterns");         //Load the Scene named "SingletonPatterns"
+        Time.timeScale = 1f;                                // Ensure game time is running
+        AudioManager.Instance.PlayMusic();                     // Resume background music
     }
+
+    
 }

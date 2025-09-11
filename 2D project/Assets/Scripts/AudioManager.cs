@@ -4,8 +4,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get;private set; }
 
-    [SerializeField] private AudioSource musicSource;   // Reference to the AudioSource component for background music
+    public AudioSource musicSource,clipSource;   // Reference to the AudioSource component for background music
     [SerializeField] private AudioClip musicClip;       // Reference to the AudioClip for background music
+    [SerializeField] private AudioClip dash;          // Reference to the AudioSource component for dash sound effect
 
     //Awake calls before Start
     private void Awake()
@@ -30,12 +31,17 @@ public class AudioManager : MonoBehaviour
     }
 
     // Method to play background music
-    void PlayMusic()
+    public void PlayMusic()
     {
         if (musicSource != null && musicClip != null)
         {
             musicSource.clip = musicClip;   // Set the music clip to the AudioSource
             musicSource.Play();             // Start playing the music
         }
+    }
+
+    public void PlayDashSound()
+    {
+        clipSource.PlayOneShot(dash);   // Play the dash sound effect
     }
 }

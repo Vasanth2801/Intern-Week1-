@@ -115,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
         lastDash = Time.time; //Setting the last dash time to the current time
 
         rb.linearVelocity = horizontalMovement.normalized*dashForce; //Applying the dash force to the player
+        AudioManager.Instance.PlayDashSound(); //Playing the dash sound
     }
 
     void HandleDash()
@@ -127,4 +128,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
