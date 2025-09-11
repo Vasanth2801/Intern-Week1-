@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);            // Hide the pause menu UI
-        GameManager.instance.ResumeGame();        // Call the ResumeGame method from GameManager to resume the game
+        GameManager.instance.ResumeGame(); // Call the ResumeGame method from GameManager to resume the game
     }
 
 
@@ -18,5 +18,4 @@ public class PauseMenu : MonoBehaviour
     {
         GameManager.instance.Restart();              // Call the Restart method from GameManager to restart the game
     }
-
 }
