@@ -161,7 +161,9 @@ What I Learned:
 * Why to use it in Projects so we dont want create many scripts one script global accessible to all others
 * Drawbacks: In Complex or large projects is very difficult to handle and may confuse people
 * How to implemeent a UI menu and call it using GameManager Singleton Pattern and how the button on click event is working
-* Learned newly about audio system how it works in game and how to implement it 
+* Learned newly about audio system how it works in game and how to implement it
+* Learned how to add specific sound effects to when ceratin event happens like pressing dash for that event alone
+* How to make the game pause and resume when certain event is trigerred and how to pause and play the game music and sound
 
 
 Implementation(Step by Step)
@@ -172,11 +174,18 @@ Implementation(Step by Step)
 * so when the button is pressed the methods allows the logic to happen
 * Created a Audiomanger script and added a audio source component to the gameobject
 * imported the musics and added in the script and then played the scene
+* In UI panel added some colours effects for the button when highlighted or pressed
+* In Gamepause logic whenthe "escape" button is pressed the game pauses and by clicking the buttons you can get back again to game by resuming or restarting 
 
 
 Features Implemented:
 * Created a simple UI menu with resume and restart buttons to see how the singleton works on gamemanager
-* Created a audiomanager to play the desired music when the game starts 
+* Created a audiomanager to play the desired music when the game starts
+* Added soundeffect for the dash event happened (using yesterday player movement ) script
+* Added the UI a little polish for button pressing 
+
+Blocker: 
+When playing the sound effects first play at oneshot was used i was using normal pLay button which was not that good so i go to unity documentation and learned about keywords for the certain effects and changed and then it worked.
 
 
 
