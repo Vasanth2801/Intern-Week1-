@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     Rigidbody2D rb;  //reference to the rigidbody2D component
     // public TextMeshProUGUI scoreText; // Reference to the score display UI
      int score = 0; // Player's score
+    [SerializeField] private ParticleSystem hitEffect; // Particle effect on hit
 
 
 
@@ -55,6 +56,7 @@ public class Bullet : MonoBehaviour
             collision.gameObject.SetActive(false);  //deactivating the enemy on hit
             gameObject.SetActive(false);  //deactivating the bullet on hit
             Debug.Log("Enemy hit! Score increased." + score);
+            hitEffect.Play(); // Play hit particle effect
             //bulletPooling.Instance.ReturnBullet(gameObject);                  //returning the bullet to the pool   
         }
     }

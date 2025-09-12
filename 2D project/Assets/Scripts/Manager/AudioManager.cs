@@ -6,7 +6,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource musicSource,clipSource;   // Reference to the AudioSource component for background music
     [SerializeField] private AudioClip musicClip;       // Reference to the AudioClip for background music
-    [SerializeField] private AudioClip dash;          // Reference to the AudioSource component for dash sound effect
+    [SerializeField] private AudioClip bulletFire;          // Reference to the AudioSource component for dash sound effect
+    
 
     //Awake calls before Start
     private void Awake()
@@ -40,8 +41,9 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayDashSound()
+    // Method to play dash sound effect
+    public void FireBullet()
     {
-        clipSource.PlayOneShot(dash);   // Play the dash sound effect
+        clipSource.PlayOneShot(bulletFire);   // Play the dash sound effect
     }
 }

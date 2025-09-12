@@ -13,6 +13,7 @@ public class TopdownMovement : MonoBehaviour
     Vector2 movement;            // Movement input vector
     public GameObject gameoverPanel; // Reference to the Game Over panel
     public GameManager gameManager;    // Reference to the GameManager script
+    public AudioManager audioManager; // Reference to the AudioManager script
 
 
 
@@ -61,6 +62,7 @@ public class TopdownMovement : MonoBehaviour
     void Shoot()
     {
         poolManager.SpawnObjects("Bullet", firePoint.position, firePoint.rotation); // Get a bullet from the pool and set its position and rotation
+        audioManager.FireBullet(); // Play bullet firing sound
     }
 
     private void OnTriggerEnter2D(Collider2D other)
