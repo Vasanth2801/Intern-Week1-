@@ -191,7 +191,7 @@ Summary:
 *Today i learned about how to use audio system in game and how to implement singleton patten effectively 
 
 
-Day -6 (12/9/2025)
+Day -7 (12/9/2025)
 
 Task: A mini top down game shooter prorotortype
 
