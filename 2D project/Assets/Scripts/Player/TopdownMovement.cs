@@ -11,6 +11,7 @@ public class TopdownMovement : MonoBehaviour
     // public  ScoreManager scoreManager;                      // Reference to the score manager script
     Rigidbody2D rb;               // Reference to the Rigidbody2D component
     Vector2 movement;            // Movement input vector
+    public GameObject gameoverPanel; // Reference to the Game Over panel
     public GameManager gameManager;    // Reference to the GameManager script
 
 
@@ -66,7 +67,7 @@ public class TopdownMovement : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-             gameManager.Restart(); // Call the Restart method from GameManager
+             gameoverPanel.SetActive(true); // Show Game Over panel
         }
         //bulletPooling.Instance.ReturnBullet(gameObject);                               //deactivating the bullet on collision
     }

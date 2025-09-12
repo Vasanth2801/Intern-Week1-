@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }      //Singleton instance of GameManager
-    public GameObject gameoverPanel;                            //Reference to the Game Over panel
 
 
     //Calls the method before Start()
