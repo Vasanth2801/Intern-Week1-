@@ -198,20 +198,30 @@ Task: A mini top down game shooter prorotortype
 
 What I have Learnded:
 * How to move the Player in top down environment for this time i tried the unity old input System
-* How to make a enemy(gameobject) follow the player and when even player moves 
-
-
+* How to make a enemy(gameobject) follow the player and when even player moves
+* How the score shows in display in unity and learned well about how the physucs system in unity works 
 
 Implementation(Step by Step):
 * Created a player and player script added the logic for the player for moving
 * For This first created a enemy object and add its tag to enemy and player to player
-* In logic give it as if the player is has player tag follow him 
-
-
+* In logic give it as if the player is has player tag follow him
+* Created a UI and added a gameover panel,score and restart button but score in display was not implemented correctly
 
 Features Implemented:
 * Player Movement using WASD or arrow keys
-* When the game starts the enemy starts the player following 
+* When the game starts the enemy starts the player following
+* Score implemntation where not completely in UI but checked using the Debug.Log
+
+
+Blocker:
+* The Bullet pooling in singleton is not implemented successfully dont know what is the issue also looked st the alternate ways to implement it and doen it but still dont know why the singleton pattern is not working
+* Disply score in text mesh pro was not working when i try to add the it in the inpscetor but dont know why it showed me type mismatch
+* Also while implementing player movement the player was not moving and not interacting with enemy then when i saw components page i noticed that the rigidbody is not added and enemy doesnt have collider so they are not interacting and then i fixed it
+
+Summary:
+
+* Despite challenges in today tasks i learned a lot of how physics and scripts work in unity
+* Please guide me what is the issue in that singleton pattern that is where i spend most of my time i want to know the isuue to know where i need to improve 
 
 
 
