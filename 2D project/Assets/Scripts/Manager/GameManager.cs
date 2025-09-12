@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }      //Singleton instance of GameManager
+    public GameObject gameoverPanel;                            //Reference to the Game Over panel
+
 
     //Calls the method before Start()
     void Awake()
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
     // Method to restart the game
     public void Restart()
     {
-        SceneManager.LoadScene("SingletonPatterns");         //Load the Scene named "SingletonPatterns"
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
         Time.timeScale = 1f;                                // Ensure game time is running
         AudioManager.Instance.PlayMusic();                     // Resume background music
     }
