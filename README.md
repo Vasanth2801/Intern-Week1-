@@ -198,17 +198,20 @@ Task: A mini top down game shooter prorotortype
 
 What I have Learnded:
 * How to move the Player in top down environment for this time i tried the unity old input System
-* 
+* How to make a enemy(gameobject) follow the player and when even player moves 
 
 
 
 Implementation(Step by Step):
-* Created a player and player script added the logic for the player for moving 
+* Created a player and player script added the logic for the player for moving
+* For This first created a enemy object and add its tag to enemy and player to player
+* In logic give it as if the player is has player tag follow him 
 
 
 
 Features Implemented:
-* Player Movement using WASD or arrow keys 
+* Player Movement using WASD or arrow keys
+* When the game starts the enemy starts the player following 
 
 
 
