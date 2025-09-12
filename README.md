@@ -191,6 +191,31 @@ Summary:
 *Today i learned about how to use audio system in game and how to implement singleton patten effectively 
 
 
+Day -6 (12/9/2025)
+
+Task: A mini top down game shooter prorotortype
+
+
+What I have Learnded:
+* How to move the Player in top down environment for this time i tried the unity old input System
+* 
+
+
+
+Implementation(Step by Step):
+* Created a player and player script added the logic for the player for moving 
+
+
+
+Features Implemented:
+* Player Movement using WASD or arrow keys 
+
+
+
+
+
+
+
 
 
 
